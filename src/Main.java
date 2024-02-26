@@ -56,7 +56,7 @@ public class Main {
         int standingPlaces = vanPlace - seatingPlace;
         int passengerSeats = 50;
         int passengerStanding = 40;
-        if (passengerSeats < 60) {
+        if (passengerSeats < seatingPlace) {
             System.out.println("Есть сидячие места в вагоне");
     } else {
             System.out.println("сидячих мест нет");}
@@ -64,7 +64,7 @@ public class Main {
             System.out.println("Есть стоячие места в вагоне");}
         else {
             System.out.println("Стоячих мест нет");}
-        if (passengerStanding > standingPlaces && passengerSeats > 60) {
+        if (passengerStanding > standingPlaces && passengerSeats > seatingPlace) {
             System.out.println("Вагон уже полностью забит");}
 
         System.out.println("Задача №7");
